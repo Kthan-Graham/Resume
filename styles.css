@@ -321,39 +321,76 @@ section[id] {
 
 
 
-/* Responsive Adjustments */
 @media (max-width: 768px) {
     .nav-container {
+        display: flex;
         flex-direction: column;
-        gap: 15px;
-        padding-bottom: 15px;
+        padding: 10px 15px;
+        gap: 10px;
     }
-    .resume-download {
-        position: static;
-        transform: none;
-        align-self: flex-start;
-        margin-top: 10px;
-        margin-left: 10px;
-        order: 1;
+
+    .button-row {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        align-items: center;
     }
-    
+
+    .download-btn {
+        position: relative !important;
+        left: auto !important;
+        top: auto !important;
+        transform: none !important;
+        margin: 0;
+        /* Keep original button styles */
+        width: 44px !important;
+        height: 44px !important;
+    }
+
     .theme-toggle {
-        position: static;
-        transform: none;
-        align-self: flex-end;
-        margin-top: -40px; /* Pull up into header space */
-        margin-right: 10px;
-        order: 1;
+        position: relative !important;
+        right: auto !important;
+        top: auto !important;
+        transform: none !important;
+        margin: 0;
+        /* Keep original button styles */
+        width: 44px !important;
+        height: 44px !important;
     }
-    
+
     .nav-menu {
-        order: 2;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin: 0;
+        padding: 0;
         width: 100%;
     }
+
+    .nav-item {
+        flex: 0 0 auto; /* Prevent items from growing/shrinking */
+    }
+
+    .nav-link {
+        /* Keep original nav-link styles */
+        padding: 10px 18px !important;
+        border-radius: 6px !important;
+        font-size: 1rem !important;
+        background-color: var(--nav-link-bg) !important;
+    }
+
+    section[id] {
+        scroll-margin-top: 150px;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-menu {
+        gap: 5px;
+    }
     
-    .nav-logo {
-        order: 1;
-        align-self: center;
-        margin-top: 10px;
+    .nav-link {
+        padding: 10px 14px !important;
     }
 }
