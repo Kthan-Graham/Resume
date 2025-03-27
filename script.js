@@ -16,6 +16,11 @@ function downloadResume() {
     document.body.removeChild(link);
 }
 
+document.documentElement.style.setProperty('--toggle-bg', 
+    document.body.classList.contains('dark-mode') 
+        ? 'rgba(255, 255, 255, 0.1)' 
+        : 'rgba(0, 0, 0, 0.1)');
+
 document.addEventListener('DOMContentLoaded', function() {
     // Theme management
     const themeToggle = document.getElementById('theme-toggle');
