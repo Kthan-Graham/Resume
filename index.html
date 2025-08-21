@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Kthan Graham - Visual Resume</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amazon+Ember:400,500,700" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+<body>
+  <div id="nodes-panel">
+    <div class="panel-header">
+      <h3>Infrastructure Composer</h3>
+      <button id="toggle-nodes-panel">◄</button>
+    </div>
+    <div class="panel-content">
+ <button id="create-custom-node">+ Create Custom Node</button> 
+      <div class="nodes-container">
+        <div class="node-template" data-node="home">
+          <div class="node-header">
+            <img src="aws_user.svg" alt="icon" />
+            Home/Contact
+          </div>
+          <div class="node-body">
+            Kthan Graham<br/>SRE II<br/>
+          </div>
+        </div>
+
+        <div class="node-template" data-node="skills">
+          <div class="node-header">
+            <img src="aws_tools.svg" alt="icon" />
+            Skills
+          </div>
+          <div class="node-body">
+            AWS, Python, Lambda<br/>
+          </div>
+        </div>
+
+        <div class="node-template" data-node="experience">
+          <div class="node-header">
+            <img src="aws_stack.svg" alt="icon" />
+            Experience
+          </div>
+          <div class="node-body">
+            SRE II @ ConnectWise<br/>
+          </div>
+        </div>
+
+        <div class="node-template" data-node="projects">
+          <div class="node-header">
+            <img src="aws_lambda.svg" alt="icon" />
+            Projects
+          </div>
+          <div class="node-body">
+            LLM Lab, Inventory tool<br/>
+          </div>
+        </div>
+
+        <div class="node-template" data-node="references">
+          <div class="node-header">
+            <img src="aws_user.svg" alt="icon" />
+            References
+          </div>
+          <div class="node-body">
+            Available upon request<br/>
+            Strong professional network
+          </div>
+        </div>
+
+        <div class="node-template" data-node="resume">
+          <div class="node-header">
+            <img src="aws_download.svg" alt="icon" />
+            Resume
+          </div>
+          <div class="node-body">
+            Click "Details" to download my latest resume (2025)
+          </div>
+        </div>
+        
+        <div class="node-template" data-node="3dprinting">
+          <div class="node-header">
+            <img src="aws_tools.svg" alt="icon" />
+            3D Printing
+          </div>
+          <div class="node-body">
+            CAD modeling, prototyping<br/>
+            Functional part design
+          </div>
+        </div>
+
+        <div class="node-template" data-node="theme">
+          <div class="node-header">
+            <img src="aws_lambda.svg" alt="icon" />
+            Theme
+          </div>
+          <div class="node-body">
+            <label class="toggle-switch">
+              <input type="checkbox" class="theme-toggle">
+              <span class="slider"></span>
+            </label>
+            <span class="toggle-label">Dark Mode</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div id="canvas-container">
+    <div id="canvas">
+      <!-- Nodes will be added here -->
+    </div>
+  </div>
+  
+
+  <div id="details-panel">
+    <div class="panel-header">
+      <h3 id="panel-title">Resource properties</h3>
+      <button id="close-details">✖</button>
+    </div>
+    <div class="panel-content">
+      <div id="details-content"></div>
+    </div>
+  </div>
+</body>
+</html>
