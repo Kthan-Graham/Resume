@@ -863,7 +863,7 @@ ConnectWise | [Aug-2023 - current]
 ConnectWise | [Mar-2021 to Aug-2023]
 •	Specialty – Specialized in database management and scripting trouble shooting/repair.
 •	Customer - Centric Debugging – Learned how infrastructure failures actually impact users—now I build systems that fail gracefully.
-•	Server stability - Ensure the partners servers can perform critical SQL queries. By Maintain Both Front and back end of servers.
+•	Server stability - Ensure the partners servers can perform critical SQL queries. By maintaining Both Front and back end of servers.
 •	Trouble shooting – trouble shoot different types of environmental issues to discover the root cause and provide solutions.
 `,
       
