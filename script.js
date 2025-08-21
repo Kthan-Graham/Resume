@@ -500,10 +500,12 @@ function setupNode(node) {
   if (e.target.closest('.node-actions')) return;
 
   isDragging = true;
-  // Store offset between mouse and node top-left
-  const nodeRect = node.getBoundingClientRect();
-  node._dragOffsetX = e.clientX - nodeRect.left;
-  node._dragOffsetY = e.clientY - nodeRect.top;
+  const canvas = document.getElementById('canvas');
+  const canvasRect = canvas.getBoundingClientRect();
+  let scale = window.scale || 1;
+  // Store offset in canvas coordinates
+  node._dragOffsetX = (e.clientX - canvasRect.left) / scale - parseFloat(node.style.left || 0);
+  node._dragOffsetY = (e.clientY - canvasRect.top) / scale - parseFloat(node.style.top || 0);
   node.style.cursor = 'grabbing';
   e.stopPropagation();
   });
@@ -512,10 +514,11 @@ function setupNode(node) {
     if (isDragging) {
       const canvas = document.getElementById('canvas');
       const canvasRect = canvas.getBoundingClientRect();
-      const scale = window.scale || 1;
-      // Keep node under mouse using initial offset
-      let x = (e.clientX - canvasRect.left) / scale - (node._dragOffsetX || 0);
-      let y = (e.clientY - canvasRect.top) / scale - (node._dragOffsetY || 0);
+      // Use the global scale variable
+      let scale = window.scale || 1;
+      // Calculate new position accounting for zoom
+  let x = (e.clientX - canvasRect.left) / scale - node._dragOffsetX;
+  let y = (e.clientY - canvasRect.top) / scale - node._dragOffsetY;
       node.style.left = `${x}px`;
       node.style.top = `${y}px`;
 
