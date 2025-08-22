@@ -854,13 +854,13 @@ Soft Skills: Problem-solving, rapid prototyping, support-to-SRE intuition, cross
 `,
 
       experience: `AWS::Serverless::EXP\n**Experience**\n\n---\n\nSite Reliability Engineer II
-ConnectWise | [Aug-2023 - current]
+ConnectWise | [Aug-2022 - current]
 •	Cut AWS Costs by 53% – Like a detective, tracked down wasted resources and automated fixes while maintaining > 99.99% uptime for all servers.
 •	Led 6,000+ Server Migrations – From Windows 2012 to 2022, ensuring zero downtime for customers
 •	Resolved Critical Incidents in <2 Hours – Used my Tier 2 triage skills to fix ScreenConnect/Automate fires faster than most SREs could log in.
 •	Redesigned QA Deployments – Simplified testing pipelines for the Manage and Automate products because I've seen what happens when bad releases hit customers.
 \n---\n\nTier 1 and 2 Support Engineer 
-ConnectWise | [Mar-2021 to Aug-2023]
+ConnectWise | [Mar-2021 to Aug-2022]
 •	Specialty – Specialized in database management and scripting trouble shooting/repair.
 •	Customer - Centric Debugging – Learned how infrastructure failures actually impact users—now I build systems that fail gracefully.
 •	Server stability - Ensure the partners servers can perform critical SQL queries. By maintaining Both Front and back end of servers.
